@@ -6,8 +6,10 @@ import { Animal } from './animal.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'Welcome To ZOOOOOOOO';
+  title = "Zoo Do You Think You Are?";
+  secondary = "an easy catalogue for all of your zoo animals"
   selectedAnimal = null;
   masterAnimalList: Animal[] = [
     new Animal('Moon', 'Arctic Fox', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool Shade', 'Loud Noises'),
@@ -16,12 +18,13 @@ export class AppComponent {
   ];
 
   editAnimal(clickedAnimal) {
-    console.log('hey brotini');
     this.selectedAnimal = clickedAnimal;
   }
+
   finishedEditing() {
     this.selectedAnimal = null;
   }
+
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }

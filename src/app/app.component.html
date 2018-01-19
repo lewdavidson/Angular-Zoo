@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="jumbotron">
-    <h1>
-      {{ title }}!
-    </h1>
+  <div class="jumbotron title">
+    <h1>{{title}}</h1>
+    <p>{{secondary}}</p>
   </div>
-
   <app-animal-display [childAnimalList]='masterAnimalList' (clickSender)="editAnimal($event)"></app-animal-display>
-  <app-animal-edit [childSelectedAnimal]='selectedAnimal' (doneClickedSender)='finishedEditing($event)'></app-animal-edit>
+
   <app-animal-add (newAnimalSender)='addAnimal($event)'></app-animal-add>
 
-</div> <!--container-->
+  <app-animal-edit [childSelectedAnimal]='selectedAnimal' (doneClickedSender)='finishedEditing($event)'></app-animal-edit>
+  
+</div>

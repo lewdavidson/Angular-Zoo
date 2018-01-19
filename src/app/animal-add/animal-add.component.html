@@ -1,20 +1,27 @@
-<h1>New Animal</h1>
-<label>Animal Name:</label>
-<input #newName>
-<label>Species:</label>
-<input #newSpecies>
-<label>Age:</label>
-<input #newAge>
-<label>Diet Type:</label>
-<input #newDiet>
-<label>Zoo Location:</label>
-<input #newLocation>
-<label>Number if Caretakers Needed:</label>
-<input #newCaretaker>
-<label>Gender:</label>
-<input #newGender>
-<label>Likes:</label>
-<input #newLike>
-<label>Dislikes:</label>
-<input #newDislike>
-<button (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretaker.value, newGender.value, newLike.value, newDislike.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretaker.value=''; newGender.value=''; newLike.value=''; newDislike.value='';" >Add To Zoo</button>
+
+<button (click)="showAskToAdd()"  class="btn btn-danger">Add A New Animal</button>
+
+<div *ngIf="askToAdd">
+  <h1>New Animal</h1>
+
+    <label>Animal Name:</label>
+    <input #newName>
+    <label>Species:</label>
+    <input #newSpecies>
+    <label>Age:</label>
+    <input #newAge>
+    <label>Diet Type:</label>
+    <input #newDiet>
+    <label>Zoo Location:</label>
+    <input #newLocation>
+    <label>Number if Caretakers Needed:</label>
+    <input #newCaretaker>
+    <label>Gender:</label>
+    <input #newGender>
+    <label>Likes:</label>
+    <input #newLike>
+    <label>Dislikes:</label>
+    <input #newDislike>
+
+  <button (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretaker.value, newGender.value, newLike.value, newDislike.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretaker.value=''; newGender.value=''; newLike.value=''; newDislike.value='';" >Add To Zoo</button>
+</div>

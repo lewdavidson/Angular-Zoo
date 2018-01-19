@@ -23,4 +23,4 @@ import { AgePipe } from './age.pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

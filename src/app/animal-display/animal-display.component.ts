@@ -19,11 +19,8 @@ export class AnimalDisplayComponent implements OnInit {
   onChange(optionFromMenu) {
     this.filterByAllAnimals = optionFromMenu;
   }
-
-
-
+  
   constructor() { }
-
   ngOnInit() {
   }
 
