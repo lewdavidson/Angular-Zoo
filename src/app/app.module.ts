@@ -4,13 +4,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AnimalDisplayComponent } from './animal-display/animal-display.component';
 import { AnimalEditComponent } from './animal-edit/animal-edit.component';
+import { AnimalAddComponent } from './animal-add/animal-add.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalDisplayComponent,
-    AnimalEditComponent
+    AnimalEditComponent,
+    AnimalAddComponent
   ],
   imports: [
     BrowserModule,

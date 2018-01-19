@@ -10,7 +10,6 @@ export class AnimalDisplayComponent implements OnInit {
 @Input() childAnimalList: Animal[];
 @Output() clickSender = new EventEmitter();
 
-
   editAnimalClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }

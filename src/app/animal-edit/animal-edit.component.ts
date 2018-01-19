@@ -7,7 +7,7 @@ import { Animal } from '../animal.model';
   styleUrls: ['./animal-edit.component.css']
 })
 export class AnimalEditComponent implements OnInit {
-  @Input() childSelectedAnimal = Animal;
+  @Input() childSelectedAnimal: Animal;
   @Output() doneClickedSender= new EventEmitter();
 
   doneClicked() {

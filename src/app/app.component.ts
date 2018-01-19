@@ -8,18 +8,21 @@ import { Animal } from './animal.model';
 })
 export class AppComponent {
   title = 'Welcome To ZOOOOOOOO';
+  selectedAnimal = null;
   masterAnimalList: Animal[] = [
     new Animal('Moon', 'Arctic Fox', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool Shade', 'Loud Noises'),
     new Animal('Prince', 'Ocelot', 4, 'Carnivore', 'Tropical Rainforest Building', 6, 'Male', 'Laying in the Sun', 'Being in a ZOO'),
     new Animal('TInkerbell', 'Deer', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Roots and Leaves', 'Loud Noises'),
   ];
 
-  selectedAnimal = false;
   editAnimal(clickedAnimal) {
-    console.log("triggered");
+    console.log("hey");
     this.selectedAnimal = clickedAnimal;
   }
   finishedEditing() {
     this.selectedAnimal = null;
+  }
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
   }
 }
