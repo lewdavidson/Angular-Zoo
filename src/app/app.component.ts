@@ -16,7 +16,6 @@ export class AppComponent {
   ];
 
   editAnimal(clickedAnimal) {
-    console.log("hey");
     this.selectedAnimal = clickedAnimal;
   }
   finishedEditing() {
