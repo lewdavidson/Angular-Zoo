@@ -1,24 +1,25 @@
   <div class="row">
-    <div *ngFor="let currentAnimal of childAnimalList | age:filterByAllAnimals">
-      <div class="card col-md">
+    <div *ngFor="let currentAnimal of childAnimalList | age:filterByAllAnimals" class="col-md-4">
+      <div class="card">
         <div class="card-title">
         <h5>{{currentAnimal.name}}</h5>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Species: {{currentAnimal.species}}</li>
-        <li class="list-group-item">Age: {{currentAnimal.age}}</li>
-        <li class="list-group-item">Diet: {{currentAnimal.diet}}</li>
-        <li class="list-group-item">Location: {{currentAnimal.location}}</li>
-        <li class="list-group-item">Number of Caretakers: {{currentAnimal.caretakers}}</li>
-        <li class="list-group-item">Gender: {{currentAnimal.gender}}</li>
-        <li class="list-group-item">Likes: {{currentAnimal.like}}</li>
-        <li class="list-group-item">Dislikes: {{currentAnimal.dislike}}</li>
-      </ul>
-      <button class="btn btn-dark" (click)="editAnimalClicked(currentAnimal)" type="button">Edit Info</button>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Species: {{currentAnimal.species}}</li>
+          <li class="list-group-item">Age: {{currentAnimal.age}}</li>
+          <li class="list-group-item">Diet: {{currentAnimal.diet}}</li>
+          <li class="list-group-item">Location: {{currentAnimal.location}}</li>
+          <li class="list-group-item">Number of Caretakers: {{currentAnimal.caretakers}}</li>
+          <li class="list-group-item">Gender: {{currentAnimal.gender}}</li>
+          <li class="list-group-item">Likes: {{currentAnimal.like}}</li>
+          <li class="list-group-item">Dislikes: {{currentAnimal.dislike}}</li>
+        </ul>
+      <button class="btn card-butt" (click)="editAnimalClicked(currentAnimal)" type="button">Edit Info</button>
     </div>
   </div>
 </div>
 
+<h4 class="filter">Filter Zoo Animals: </h4>
 <select (change)="onChange($event.target.value)">
   <option value="allAnimals" selected="selected" >All Zoo Animals</option>
   <option value="youngerAnimals">Animals Under 2 Years Old</option>

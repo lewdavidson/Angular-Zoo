@@ -1,0 +1,31 @@
+.card-title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background: #DB7F67;
+  margin-bottom: 0;
+  color: #373E40;
+}
+
+.list-group-item {
+  background: #DAD7CD;
+  color: #305252;
+  padding: 15px;
+}
+
+.card-butt {
+  background: #305252;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.filter {
+  display: inline-block;
+}
+select {
+  margin-left: 15px;
+}

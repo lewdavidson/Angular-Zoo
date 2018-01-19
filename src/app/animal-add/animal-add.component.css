@@ -1,0 +1,27 @@
+.add-button {
+  float: right;
+  background: #373E40;
+  color: #DAD7CD;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  background: #DAD7CD;
+}
+
+.done-adding {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #DB7F67;
+  color: #305252;
+  height: 40px;
+}
+
+.form-title {
+  color: #373E40;
+}
