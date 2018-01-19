@@ -16,6 +16,7 @@ export class AppComponent {
   ];
 
   editAnimal(clickedAnimal) {
+    console.log('hey brotini');
     this.selectedAnimal = clickedAnimal;
   }
   finishedEditing() {

@@ -9,6 +9,7 @@ import { Animal } from '../animal.model';
 export class AnimalEditComponent implements OnInit {
   @Input() childSelectedAnimal: Animal;
   @Output() doneClickedSender= new EventEmitter();
+  
 
   doneClicked() {
     this.doneClickedSender.emit();

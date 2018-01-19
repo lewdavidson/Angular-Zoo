@@ -6,18 +6,18 @@
 
 ## Requirements:
 
-- [ ] Users can view a list of currently logged animals.
-- [ ] Users can edit animal's name, age, and # of needed caretakers.
-- [ ] Users can add new animals via a form including:
-  - [ ] Name
-  - [ ] Species
-  - [ ] Age
-  - [ ] Diet
-  - [ ] Zoo Location
-  - [ ] Number of needed caretakers
-  - [ ] Gender
-  - [ ] One Like
-  - [ ] One Dislike
+- [ x ] Users can view a list of currently logged animals.
+- [ x ] Users can edit animal's name, age, and # of needed caretakers.
+- [ x ] Users can add new animals via a form including:
+  - [ x ] Name
+  - [ x ] Species
+  - [ x ] Age
+  - [ x ] Diet
+  - [ x ] Zoo Location
+  - [ x ] Number of needed caretakers
+  - [ x ] Gender
+  - [ x ] One Like
+  - [ x ] One Dislike
 - [ ] Users can filter the list of available animals by:
  - [ ] All
  - [ ] Animals less than 2 years old
@@ -25,11 +25,11 @@
 
 
 Must use:
- - [ ] Model
+ - [ x ] Model
  - [ ] Portfolio ready
- - [ ] Separate components for adding, editing, and displaying
- - [ ] Successfully create, edit, and display instances of a model
- - [ ] Typescript used
+ - [ x ] Separate components for adding, editing, and displaying
+ - [ x ] Successfully create, edit, and display instances of a model
+ - [ x ] Typescript used
  - [ ] Filter instances with a pipe.
 
 ## Setup Instructions
