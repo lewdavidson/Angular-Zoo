@@ -14,7 +14,7 @@
   - [ ] Age
   - [ ] Diet
   - [ ] Zoo Location
-  - [ ] Number of needed Caretakers
+  - [ ] Number of needed caretakers
   - [ ] Gender
   - [ ] One Like
   - [ ] One Dislike
