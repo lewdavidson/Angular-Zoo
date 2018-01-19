@@ -1,27 +1,43 @@
-# Friday
+# Friday - Zoo
+### Lew Davidson
+
+## Description
+ * A zoo app that allows a user (employee of a zoo) to log, display, edit, and filter a list of animals in their care using angular.
+
+## Requirements:
+
+- [ ] Users can view a list of currently logged animals.
+- [ ] Users can edit animal's name, age, and # of needed caretakers.
+- [ ] Users can add new animals via a form including:
+  - [ ] Name
+  - [ ] Species
+  - [ ] Age
+  - [ ] Diet
+  - [ ] Zoo Location
+  - [ ] Number of needed Caretakers
+  - [ ] Gender
+  - [ ] One Like
+  - [ ] One Dislike
+- [ ] Users can filter the list of available animals by:
+ - [ ] All
+ - [ ] Animals less than 2 years old
+ - [ ] Animals more than 2 years old
+
+
+Must use:
+ - [ ] Model
+ - [ ] Portfolio ready
+ - [ ] Separate components for adding, editing, and displaying
+ - [ ] Successfully create, edit, and display instances of a model
+ - [ ] Typescript used
+ - [ ] Filter instances with a pipe.
+
+## Setup Instructions
+* Open Terminal
+* $ cd Desktop
+* $ git clone https://github.com/lewdavidson/angular-friday.git
+* $ cd friday
+* $ atom .  (- to edit or review code)
+* $ ng serve -o (- to view and use app)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
