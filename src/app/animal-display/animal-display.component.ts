@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Animal } from '../animal.model';
 
 @Component({
@@ -7,6 +7,13 @@ import { Animal } from '../animal.model';
   styleUrls: ['./animal-display.component.css']
 })
 export class AnimalDisplayComponent implements OnInit {
+@Input() childAnimalList: Animal[];
+
+
+
+
+
+
 
   constructor() { }
 
