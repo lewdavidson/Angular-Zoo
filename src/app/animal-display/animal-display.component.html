@@ -1,17 +1,25 @@
   <div class="row">
-    <div *ngFor="let currentAnimal of childAnimalList">
+
+    <select (change)="onChange($event.target.value)">
+      <option value="allAnimals" selected="selected" >All Zoo Animals</option>
+      <option value="youngerAnimals">Animals Under 2 Years Old</option>
+      <option value="olderAnimals">Animals Over 2 Years Old</option>
+    </select>
+
+
+    <div *ngFor="let currentAnimal of childAnimalList | age:filterByAllAnimals">
       <div class="card">
         <h5>{{currentAnimal.name}}</h5>
-      <ul>
-        <li>Species: {{currentAnimal.species}}</li>
-        <li>Age: {{currentAnimal.age}}</li>
-        <li>Diet: {{currentAnimal.diet}}</li>
-        <li>Location: {{currentAnimal.location}}</li>
-        <li>Number of Caretakers: {{currentAnimal.caretakers}}</li>
-        <li>Gender: {{currentAnimal.gender}}</li>
-        <li>Likes: {{currentAnimal.like}}</li>
-        <li>Dislikes: {{currentAnimal.dislike}}</li>
-      </ul>
+        <ul>
+          <li>Species: {{currentAnimal.species}}</li>
+          <li>Age: {{currentAnimal.age}}</li>
+          <li>Diet: {{currentAnimal.diet}}</li>
+          <li>Location: {{currentAnimal.location}}</li>
+          <li>Number of Caretakers: {{currentAnimal.caretakers}}</li>
+          <li>Gender: {{currentAnimal.gender}}</li>
+          <li>Likes: {{currentAnimal.like}}</li>
+          <li>Dislikes: {{currentAnimal.dislike}}</li>
+        </ul>
       <button (click)="editAnimalClicked(currentAnimal)" type="button">Edit Info</button>
     </div>
   </div>

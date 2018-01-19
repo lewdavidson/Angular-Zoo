@@ -18,10 +18,10 @@
   - [ x ] Gender
   - [ x ] One Like
   - [ x ] One Dislike
-- [ ] Users can filter the list of available animals by:
- - [ ] All
- - [ ] Animals less than 2 years old
- - [ ] Animals more than 2 years old
+- [ x ] Users can filter the list of available animals by:
+ - [ x ] All
+ - [ x ] Animals less than 2 years old
+ - [ x ] Animals more than 2 years old
 
 
 Must use:
@@ -30,7 +30,7 @@ Must use:
  - [ x ] Separate components for adding, editing, and displaying
  - [ x ] Successfully create, edit, and display instances of a model
  - [ x ] Typescript used
- - [ ] Filter instances with a pipe.
+ - [ x ] Filter instances with a pipe.
 
 ## Setup Instructions
 * Open Terminal

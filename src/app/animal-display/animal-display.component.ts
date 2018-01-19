@@ -14,6 +14,12 @@ export class AnimalDisplayComponent implements OnInit {
     this.clickSender.emit(animalToEdit);
   }
 
+  filterByAllAnimals: string = 'allAnimals';
+
+  onChange(optionFromMenu) {
+    this.filterByAllAnimals = optionFromMenu;
+  }
+
 
 
   constructor() { }
