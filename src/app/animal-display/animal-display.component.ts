@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../animal.model';
 
 @Component({
@@ -8,10 +8,12 @@ import { Animal } from '../animal.model';
 })
 export class AnimalDisplayComponent implements OnInit {
 @Input() childAnimalList: Animal[];
+@Output() clickSender = new EventEmitter();
 
 
-
-
+  editAnimalClicked(animalToEdit: Animal) {
+    this.clickSender.emit(animalToEdit);
+  }
 
 
 

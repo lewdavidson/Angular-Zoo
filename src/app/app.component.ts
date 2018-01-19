@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 
 @Component({
@@ -13,4 +13,13 @@ export class AppComponent {
     new Animal('Prince', 'Ocelot', 4, 'Carnivore', 'Tropical Rainforest Building', 6, 'Male', 'Laying in the Sun', 'Being in a ZOO'),
     new Animal('TInkerbell', 'Deer', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Roots and Leaves', 'Loud Noises'),
   ];
+
+  selectedAnimal = false;
+  editAnimal(clickedAnimal) {
+    console.log("triggered");
+    this.selectedAnimal = clickedAnimal;
+  }
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
 }

@@ -6,6 +6,6 @@
   </div>
 
   <app-animal-display [childAnimalList]='masterAnimalList'></app-animal-display>
-
+  <app-animal-edit [childSelectedAnimal]='selectedAnimal' (clickSender)='editAnimal($event)' (doneClickedSender)='finishedEditing($event)'></app-animal-edit>
 
 </div> <!--container-->
