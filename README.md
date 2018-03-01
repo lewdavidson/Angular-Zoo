@@ -4,6 +4,17 @@
 ## Description
  * A zoo app that allows a user (employee of a zoo) to log, display, edit, and filter a list of animals in their care using angular.
 
+ ![zoo-pic](zoo.png)
+
+## Setup Instructions
+ * Open Terminal
+ * $ cd Desktop
+ * $ git clone https://github.com/lewdavidson/angular-friday.git
+ * $ cd friday
+ * $ npm install
+ * $ ng serve -o (- to view and use app)
+ * open http://localhost:4200/ in the web browser of your choice.
+
 ## Requirements:
 
 - [ x ] Users can view a list of currently logged animals.
@@ -26,18 +37,11 @@
 
 Must use:
  - [ x ] Model
- - [ ] Portfolio ready
+ - [ x ] Portfolio ready
  - [ x ] Separate components for adding, editing, and displaying
  - [ x ] Successfully create, edit, and display instances of a model
  - [ x ] Typescript used
  - [ x ] Filter instances with a pipe.
 
-## Setup Instructions
-* Open Terminal
-* $ cd Desktop
-* $ git clone https://github.com/lewdavidson/angular-friday.git
-* $ cd friday
-* $ atom .  (- to edit or review code)
-* $ ng serve -o (- to view and use app)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
