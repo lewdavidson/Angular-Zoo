@@ -10,7 +10,7 @@
  * Open Terminal
  * $ cd Desktop
  * $ git clone https://github.com/lewdavidson/angular-friday.git
- * $ cd friday
+ * $ cd angular-friday
  * $ npm install
  * $ ng serve -o (- to view and use app)
  * open http://localhost:4200/ in the web browser of your choice.
